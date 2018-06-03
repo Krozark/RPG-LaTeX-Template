@@ -38,9 +38,11 @@
 	color=black,
 	contents={%
 		\ifodd\value{page}
-			\includegraphics[width=\paperwidth]{\oddbackgroundimg}
-			\else
-			\includegraphics[width=\paperwidth]{\evenbackgroundimg}
+			% implicit height is not supported on linux.
+			\includegraphics[width=\paperwidth,height=\paperheight]{\oddbackgroundimg}
+		\else
+			% implicit height is not supported on linux.
+			\includegraphics[width=\paperwidth,height=\paperheight]{\evenbackgroundimg}
 		\fi
 		}
 	}
