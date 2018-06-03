@@ -38,9 +38,9 @@
 	color=black,
 	contents={%
 		\ifodd\value{page}
-			\includegraphics[width=\paperwidth]{\oddbackgroundimg}
+			\includegraphics[width=\paperwidth,height=\paperheight]{\oddbackgroundimg}
 			\else
-			\includegraphics[width=\paperwidth]{\evenbackgroundimg}
+			\includegraphics[width=\paperwidth,height=\paperheight]{\evenbackgroundimg}
 		\fi
 		}
 	}
