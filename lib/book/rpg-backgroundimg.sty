@@ -37,10 +37,10 @@
 	angle=0,
 	color=black,
   contents={%
-  \ifodd\value{page}
+		\ifodd\value{page}
 			% implicit height is not supported on linux.
 			\includegraphics[width=\paperwidth,height=\paperheight]{\oddbackgroundimg}
-    \else
+		\else
 			% implicit height is not supported on linux.
 			\includegraphics[width=\paperwidth,height=\paperheight]{\evenbackgroundimg}
 		\fi
