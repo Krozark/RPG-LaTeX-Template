@@ -36,12 +36,12 @@
 	opacity=1.0,
 	angle=0,
 	color=black,
-	contents={%
-    \ifodd\value{page}
-      % implicit height is not supported on linux.
+  contents={%
+  \ifodd\value{page}
+			% implicit height is not supported on linux.
 			\includegraphics[width=\paperwidth,height=\paperheight]{\oddbackgroundimg}
     \else
-      % implicit height is not supported on linux.
+			% implicit height is not supported on linux.
 			\includegraphics[width=\paperwidth,height=\paperheight]{\evenbackgroundimg}
 		\fi
 		}
